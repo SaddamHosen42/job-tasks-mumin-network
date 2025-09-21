@@ -3,6 +3,8 @@ import navbarPic from "./assets/navbar-profile.png";
 import sidebarLogo from "./assets/logo 1.png";
 import Navbar from "./components/navbar/Navbar";
 import profileIcon from "./assets/profile-sm.png";
+import BannerThumbnail from "./components/banner-thumbnail/BannerThambel";
+import PopularChannels from "./components/popular-channels/PopularChannels";
 function App() {
   const mainMenu = (
     <>
@@ -241,8 +243,21 @@ function App() {
           </div>
 
           {/* Page content here */}
-          <div className="px-4">
-            <Navbar />
+          <div className="container mx-auto max-w[95%]">
+            <div className="px-4">
+              <Navbar />
+            </div>
+            {/* Banner Thumbnail */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-[18px] mt-5">
+              {/* Video Thumbnail */}
+              <div className="col-span-3">
+                <BannerThumbnail />
+              </div>
+              {/* Popular Channels */}
+              <div className="lg:col-span-1 bg-[#FFFFFF] border-[#E5E7EB] rounded-md p-4">
+                <PopularChannels />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -272,14 +287,15 @@ function App() {
               </h1>
               {following}
             </div>
-            {/* get premium */}
-           <div className="fixed bottom-22 bg-[#F9FAFB] border-[#E5E7EB] rounded-lg p-3 w-[174px]">
-             <div className="mt-8">
-              <button className="btn w-full text-[#151116] border-[#6DCC4C] font-medium py-3 px-4 rounded-lg hover:from-[#5BB83A] hover:to-[#4FA62F] ">
-                Get Premium
-              </button>
+
+            {/* get premium btn  */}
+            <div className="fixed bottom-22 bg-[#F9FAFB] border-[#E5E7EB] rounded-lg p-3 w-[174px]">
+              <div className="mt-8">
+                <button className="btn w-full text-[#151116] border-[#6DCC4C] font-medium py-3 px-4 rounded-lg hover:from-[#5BB83A] hover:to-[#4FA62F] ">
+                  Get Premium
+                </button>
+              </div>
             </div>
-           </div>
 
             {/* Theme Toggle Buttons - Fixed at bottom */}
             <div className="fixed bottom-4  w-[calc(100%-2rem)] max-w-[200px] flex items-center justify-center gap-3 bg-[#F9FAFB] rounded-lg p-1 shadow-sm border border-[#E5E7EB]">

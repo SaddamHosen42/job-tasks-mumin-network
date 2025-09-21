@@ -27,12 +27,15 @@ const Categories = () => {
 
   return (
     <div>
-      <h1 className="font-medium text-[#151116] text-[28px]">Categories</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="font-medium text-[#151116] text-[28px]">Categories</h1>
+        <p className="text-[#9DA3AE] underline">See All</p>
+      </div>
       <div className="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {categories.map((category) => (
           <div
             key={category.id}
-            className="bg-[#FFFFFF] border-[#E5E7EB] p-3 rounded-sm"
+            className="bg-[#FFFFFF] border border-[#E5E7EB] p-3 rounded-sm"
           >
             <div className="flex items-center justify-between">
               <img

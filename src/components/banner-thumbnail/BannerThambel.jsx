@@ -5,16 +5,15 @@ import eyeIcon from "../../assets/eye-icon.png";
 import loveIcon from "../../assets/love-icon.png";
 const BannerThumbnail = () => {
   return (
-    <div>
-      <div className="relative">
-        <img
-          className="w-full h-[345px] rounded-[10px]"
-          src={bannerImage}
-          alt="Banner Thumbnail"
-        />
-      </div>
+    <div className="relative">
+      <img
+        className="w-full h-[345px] rounded-[10px]"
+        src={bannerImage}
+        alt="Banner Thumbnail"
+      />
+      
       {/* profile icon */}
-      <div className="flex items-center mt-4 absolute top-25 pl-10">
+      <div className="flex items-center absolute top-6 left-10">
         <img
           className="h-[22px] w-[22px] rounded-full"
           src={profileIcon}
@@ -22,8 +21,9 @@ const BannerThumbnail = () => {
         />
         <h2 className="text-white text-[12px] ml-2">Mohammad Hijab</h2>
       </div>
-        {/* title and button */}
-      <div className="absolute top-60 pl-10">
+      
+      {/* title and button */}
+      <div className="absolute bottom-8 left-10">
         <h1 className="text-white text-2xl font-medium">
           Islam Vs Atheism Oxford <br /> University forum debate
         </h1>
@@ -58,8 +58,9 @@ const BannerThumbnail = () => {
           </button>
         </div>
       </div>
+      
       {/* Views Count */}
-      <div className="flex gap-6 absolute top-85 lg:right-100 right-6">
+      <div className="flex gap-6 absolute bottom-8 right-10">
         <div className="flex items-center gap-2">
             <img src={eyeIcon} alt="Views Count" />
             <p className="font-semibold text-sm text-white">14k

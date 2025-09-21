@@ -3,6 +3,131 @@ import navbarPic from "./assets/navbar-profile.png";
 import sidebarLogo from "./assets/logo 1.png";
 import Navbar from "./components/navbar/Navbar";
 function App() {
+  const mainMenu = (
+    <>
+      <ul className="space-y-5 ">
+        <div className="bg-[#F0F2F9] flex items-center gap-2 font-medium rounded-sm py-[5px] text-[#070628] pl-2">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.0402 6.82018L14.2802 2.79018C12.7102 1.69018 10.3002 1.75018 8.79023 2.92018L3.78023 6.83018C2.78023 7.61018 1.99023 9.21018 1.99023 10.4702V17.3702C1.99023 19.9202 4.06023 22.0002 6.61023 22.0002H17.3902C19.9402 22.0002 22.0102 19.9302 22.0102 17.3802V10.6002C22.0102 9.25018 21.1402 7.59018 20.0402 6.82018ZM12.7502 18.0002C12.7502 18.4102 12.4102 18.7502 12.0002 18.7502C11.5902 18.7502 11.2502 18.4102 11.2502 18.0002V15.0002C11.2502 14.5902 11.5902 14.2502 12.0002 14.2502C12.4102 14.2502 12.7502 14.5902 12.7502 15.0002V18.0002Z"
+              fill="#6DCC4C"
+            />
+          </svg>
+          <a href="#">Home</a>
+        </div>
+        <div className="flex items-center gap-2 opacity-60 pl-2">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 9V8C2 5 4 3 7 3H17C20 3 22 5 22 8V16C22 19 20 21 17 21H16"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M3.69141 11.7109C8.31141 12.3009 11.7014 15.701 12.3014 20.321"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M2.62109 15.0703C6.01109 15.5003 8.5011 18.0003 8.9411 21.3903"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M1.98047 18.8594C3.67047 19.0794 4.92047 20.3194 5.14047 22.0194"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <a href="#">All Channels</a>
+        </div>
+        <div className="flex items-center gap-2 opacity-60 pl-2">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.25 9.05078C11.03 9.70078 12.97 9.70078 14.75 9.05078"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.8203 2H7.18031C5.05031 2 3.32031 3.74 3.32031 5.86V19.95C3.32031 21.75 4.61031 22.51 6.19031 21.64L11.0703 18.93C11.5903 18.64 12.4303 18.64 12.9403 18.93L17.8203 21.64C19.4003 22.52 20.6903 21.76 20.6903 19.95V5.86C20.6803 3.74 18.9503 2 16.8203 2Z"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <a href="#">Your Library</a>
+        </div>
+        <div className="flex items-center gap-2 opacity-60 pl-2">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.0095 2.92031L18.9095 5.54031C20.6095 6.29031 20.6095 7.53031 18.9095 8.28031L13.0095 10.9003C12.3395 11.2003 11.2395 11.2003 10.5695 10.9003L4.66953 8.28031C2.96953 7.53031 2.96953 6.29031 4.66953 5.54031L10.5695 2.92031C11.2395 2.62031 12.3395 2.62031 13.0095 2.92031Z"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3 11C3 11.84 3.63 12.81 4.4 13.15L11.19 16.17C11.71 16.4 12.3 16.4 12.81 16.17L19.6 13.15C20.37 12.81 21 11.84 21 11"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M3 16C3 16.93 3.55 17.77 4.4 18.15L11.19 21.17C11.71 21.4 12.3 21.4 12.81 21.17L19.6 18.15C20.45 17.77 21 16.93 21 16"
+              stroke="#292D32"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <a href="#">History</a>
+        </div>
+      </ul>
+    </>
+  );
   return (
     <>
       <div className="drawer lg:drawer-open bg-[#F0F2F9] min-h-screen ">
@@ -36,7 +161,7 @@ function App() {
             </div>
             <div className="flex items-center gap-3">
               <svg
-              className="opacity-60"
+                className="opacity-60"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -46,23 +171,23 @@ function App() {
                 <path
                   d="M12.0186 2.91016C8.70862 2.91016 6.01862 5.60016 6.01862 8.91016V11.8002C6.01862 12.4102 5.75862 13.3402 5.44862 13.8602L4.29862 15.7702C3.58862 16.9502 4.07862 18.2602 5.37862 18.7002C9.68862 20.1402 14.3386 20.1402 18.6486 18.7002C19.8586 18.3002 20.3886 16.8702 19.7286 15.7702L18.5786 13.8602C18.2786 13.3402 18.0186 12.4102 18.0186 11.8002V8.91016C18.0186 5.61016 15.3186 2.91016 12.0186 2.91016Z"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
                 />
                 <path
                   d="M13.8719 3.20141C13.5619 3.11141 13.2419 3.04141 12.9119 3.00141C11.9519 2.88141 11.0319 2.95141 10.1719 3.20141C10.4619 2.46141 11.1819 1.94141 12.0219 1.94141C12.8619 1.94141 13.5819 2.46141 13.8719 3.20141Z"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M15.0195 19.0586C15.0195 20.7086 13.6695 22.0586 12.0195 22.0586C11.1995 22.0586 10.4395 21.7186 9.89953 21.1786C9.35953 20.6386 9.01953 19.8786 9.01953 19.0586"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
+                  strokeWidth="1.5"
+                  strokeMiterlimit="10"
                 />
               </svg>
 
@@ -94,7 +219,9 @@ function App() {
             <div className="flex justify-center mb-10">
               <img src={sidebarLogo} alt="Mumin Network Logo" />
             </div>
-
+            {/* Sidebar menu */}
+            <h1 className="text-sm  text-[#070628] opacity-60 mb-5">MAIN MENU</h1>
+            {mainMenu}
           </div>
         </div>
       </div>

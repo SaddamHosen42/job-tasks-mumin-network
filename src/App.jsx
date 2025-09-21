@@ -250,14 +250,14 @@ function App() {
               <Navbar />
             </div>
 
-            {/* Banner Thumbnail */}
+            {/* Banner section */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-[18px] mt-5">
              {/* Video Thumbnail */}
-              <div className="lg:col-span-3">
+              <div className="lg:col-span-3 h-fit lg:h-[345px]">
                 <BannerThumbnail />
               </div>
              {/* Popular Channels */}
-              <div className="lg:col-span-1 bg-[#FFFFFF] border border-[#E5E7EB] rounded-md p-4">
+              <div className="lg:col-span-1 bg-[#FFFFFF] border border-[#E5E7EB] rounded-md p-4 h-fit lg:h-[345px] overflow-y-auto">
                 <PopularChannels />
               </div>
             </div>

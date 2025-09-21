@@ -2,6 +2,7 @@ import "./App.css";
 import navbarPic from "./assets/navbar-profile.png";
 import sidebarLogo from "./assets/logo 1.png";
 import Navbar from "./components/navbar/Navbar";
+import profileIcon from "./assets/profile-sm.png";
 function App() {
   const mainMenu = (
     <>
@@ -128,6 +129,28 @@ function App() {
       </ul>
     </>
   );
+  const following = (
+    <>
+      <div className="space-y-[18px] pl-2">
+        <div className="flex items-center gap-2">
+          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <p className="opacity-60 text-[#070628]">Mawlana Tarek..</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <p className="opacity-60 text-[#070628]">Mawlana</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <p className="opacity-60 text-[#070628]">Mawlana</p>
+        </div>
+        <div className="flex items-center gap-2">
+          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <p className="opacity-60 text-[#070628]">Mawlana</p>
+        </div>
+      </div>
+    </>
+    );
   return (
     <>
       <div className="drawer lg:drawer-open bg-[#F0F2F9] min-h-screen ">
@@ -220,8 +243,19 @@ function App() {
               <img src={sidebarLogo} alt="Mumin Network Logo" />
             </div>
             {/* Sidebar menu */}
-            <h1 className="text-sm  text-[#070628] opacity-60 mb-5">MAIN MENU</h1>
-            {mainMenu}
+            <div className="mb-14">
+              <h1 className="text-sm  text-[#070628] opacity-60 mb-5">
+                MAIN MENU
+              </h1>
+              {mainMenu}
+            </div>
+            {/* Following */}
+            <div>
+              <h1 className="text-sm  text-[#070628] opacity-60 mb-5">
+                FOLLOWING
+              </h1>
+              {following}
+            </div>
           </div>
         </div>
       </div>

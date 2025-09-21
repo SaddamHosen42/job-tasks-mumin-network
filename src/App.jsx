@@ -133,24 +133,40 @@ function App() {
     <>
       <div className="space-y-[18px] pl-2">
         <div className="flex items-center gap-2">
-          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <img
+            className="rounded-full w-6 h-6"
+            src={profileIcon}
+            alt="Profile"
+          />
           <p className="opacity-60 text-[#070628]">Mawlana Tarek..</p>
         </div>
         <div className="flex items-center gap-2">
-          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <img
+            className="rounded-full w-6 h-6"
+            src={profileIcon}
+            alt="Profile"
+          />
           <p className="opacity-60 text-[#070628]">Mawlana</p>
         </div>
         <div className="flex items-center gap-2">
-          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <img
+            className="rounded-full w-6 h-6"
+            src={profileIcon}
+            alt="Profile"
+          />
           <p className="opacity-60 text-[#070628]">Mawlana</p>
         </div>
         <div className="flex items-center gap-2">
-          <img className="rounded-full w-6 h-6" src={profileIcon} alt="Profile" />
+          <img
+            className="rounded-full w-6 h-6"
+            src={profileIcon}
+            alt="Profile"
+          />
           <p className="opacity-60 text-[#070628]">Mawlana</p>
         </div>
       </div>
     </>
-    );
+  );
   return (
     <>
       <div className="drawer lg:drawer-open bg-[#F0F2F9] min-h-screen ">
@@ -255,6 +271,66 @@ function App() {
                 FOLLOWING
               </h1>
               {following}
+            </div>
+            {/* get premium */}
+           <div className="fixed bottom-22 bg-[#F9FAFB] border-[#E5E7EB] rounded-lg p-3 w-[174px]">
+             <div className="mt-8">
+              <button className="btn w-full text-[#151116] border-[#6DCC4C] font-medium py-3 px-4 rounded-lg hover:from-[#5BB83A] hover:to-[#4FA62F] ">
+                Get Premium
+              </button>
+            </div>
+           </div>
+
+            {/* Theme Toggle Buttons - Fixed at bottom */}
+            <div className="fixed bottom-4  w-[calc(100%-2rem)] max-w-[200px] flex items-center justify-center gap-3 bg-[#F9FAFB] rounded-lg p-1 shadow-sm border border-[#E5E7EB]">
+              {/* Light Theme Button */}
+              <button className="btn flex items-center gap-1 pr-1 transition-colors duration-200 bg-white">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z"
+                    stroke="#292D32"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z"
+                    stroke="#292D32"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span className="text-sm text-[#151116] ">Light</span>
+              </button>
+
+              {/* Dark Theme Button */}
+              <button className="flex items-center gap-1 px-2 py-1 rounded transition-colors duration-200 opacity-60">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.03107 12.4209C2.39107 17.5709 6.76107 21.7609 11.9911 21.9909C15.6811 22.1509 18.9811 20.4309 20.9611 17.7209C21.7811 16.6109 21.3411 15.8709 19.9711 16.1209C19.3011 16.2409 18.6111 16.2909 17.8911 16.2609C13.0011 16.0609 9.00107 11.9709 8.98107 7.14094C8.97107 5.84094 9.24107 4.61094 9.73107 3.49094C10.2711 2.25094 9.62107 1.66094 8.37107 2.19094C4.41107 3.86094 1.70107 7.85094 2.03107 12.4209Z"
+                    stroke="#292D32"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span className="text-sm text-gray-700">Dark</span>
+              </button>
             </div>
           </div>
         </div>

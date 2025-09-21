@@ -59,7 +59,7 @@ const BannerThumbnail = () => {
         </div>
       </div>
       {/* Views Count */}
-      <div className="flex gap-6 absolute top-85 lg:right-110 right-3">
+      <div className="flex gap-6 absolute top-85 lg:right-100 right-6">
         <div className="flex items-center gap-2">
             <img src={eyeIcon} alt="Views Count" />
             <p className="font-semibold text-sm text-white">14k

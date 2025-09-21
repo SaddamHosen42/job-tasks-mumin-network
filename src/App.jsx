@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import profileIcon from "./assets/profile-sm.png";
 import BannerThumbnail from "./components/banner-thumbnail/BannerThambel";
 import PopularChannels from "./components/popular-channels/PopularChannels";
+import Categories from "./components/categories/Categories";
 function App() {
   const mainMenu = (
     <>
@@ -243,20 +244,25 @@ function App() {
           </div>
 
           {/* Page content here */}
-          <div className="container mx-auto max-w[95%]">
+          <div className="container mx-auto w[95%] px-2 lg:px-5">
             <div className="px-4">
               <Navbar />
             </div>
             {/* Banner Thumbnail */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-[18px] mt-5">
-              {/* Video Thumbnail */}
-              <div className="col-span-3">
+             {/* Video Thumbnail */}
+              <div className="lg:col-span-3">
                 <BannerThumbnail />
               </div>
-              {/* Popular Channels */}
+             {/* Popular Channels */}
               <div className="lg:col-span-1 bg-[#FFFFFF] border-[#E5E7EB] rounded-md p-4">
                 <PopularChannels />
               </div>
+            </div>
+            {/* Categories */}
+             {/* Categories */}
+            <div>
+              <Categories />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import navbarPic from "../../assets/navbar-profile.png";
 import addVideoIcon from "../../assets/add-video.png";
-import blogIcon from "../../assets/blog-icon.svg";
+import blogIcon from "../../assets/categories/blog-Icon.png";
 const Navbar = () => {
   return (
     <div className=" hidden navbar  lg:flex">

@@ -246,7 +246,7 @@ function App() {
 
           {/* Page content here */}
           <div className="container mx-auto w[95%] px-2 lg:px-5">
-            <div className="px-4">
+            <div>
               <Navbar />
             </div>
 

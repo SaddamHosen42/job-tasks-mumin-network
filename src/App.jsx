@@ -293,11 +293,13 @@ function App() {
               {mainMenu}
             </div>
             {/* Following */}
-            <div>
+            <div className="mb-20 sm:mb-0">
               <h1 className="text-sm  text-[#070628] opacity-60 mb-5">
                 FOLLOWING
               </h1>
-              {following}
+              <div className="max-h-32 sm:max-h-none overflow-y-auto pr-2">
+                {following}
+              </div>
             </div>
 
             {/* get premium btn  */}
